@@ -15,6 +15,6 @@ def sum_pair_numbers(num_Max):
 
 if __name__ == '__main__':
     start = time.time()
-    print(f'Sum: {sum_pair_numbers(1000000000)}')
+    print(f'Sum: {sum_pair_numbers(10_000_000)}')
     end = time.time()
     print(f'{end-start} s')
