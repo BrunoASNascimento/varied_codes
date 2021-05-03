@@ -6,10 +6,14 @@
 import random
 import requests
 
+step_change = 2
 
-def check_ip():
+
+def check_ip(control):
+    global creds
     session = requests.session()
-    creds = str(random.randint(10000, 0x7fffffff)) + ":" + "foobar"
+    if control % step_change == 0:
+        creds = str(random.randint(10000, 0x7fffffff)) + ":" + "foobar"
     session.proxies = {
         'http': 'socks5h://{}@localhost:9050'.format(creds),
         'https': 'socks5h://{}@localhost:9050'.format(creds)
@@ -18,5 +22,5 @@ def check_ip():
     print(r.text)
 
 
-for _ in range(5):
-    check_ip()
+for i in range(5):
+    check_ip(i)
