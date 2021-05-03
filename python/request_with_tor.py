@@ -1,4 +1,4 @@
-# Open directory TOR -> cd C:\Users\bruno\Tor Browser\Browser\TorBrowser\Tor
+# Open directory TOR -> cd "C:\Users\bruno\Tor Browser\Browser\TorBrowser\Tor"
 # Deactivate service -> tor --service remove
 # Activate service -> tor --service install -options ControlPort 9151
 # List all conections -> netstat -an
@@ -18,4 +18,5 @@ def check_ip():
     print(r.text)
 
 
-check_ip()
+for _ in range(5):
+    check_ip()
