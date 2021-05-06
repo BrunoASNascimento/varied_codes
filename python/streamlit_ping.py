@@ -9,7 +9,7 @@ if current_os == "windows":
 else:
     parameter = "-c"
 
-ip = "10.100.3.15"
+ip = "127.0.0.1"
 exit_code = os.system(f"ping {ip}")
 print(exit_code)
 if exit_code == 0:
