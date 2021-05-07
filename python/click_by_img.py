@@ -3,7 +3,8 @@ import pyautogui
 
 def click_fig(img_name):
     print(f'[INFO] Read image: {img_name}')
-    button_location = pyautogui.locateOnScreen(img_name, confidence=0.9)
+    button_location = pyautogui.locateOnScreen(
+        img_name, confidence=0.9, grayscale=True)
     print(button_location)
     center_point = pyautogui.center(button_location)
     print(center_point)
