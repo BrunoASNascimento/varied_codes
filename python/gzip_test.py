@@ -2,8 +2,8 @@ import gzip
 import shutil
 import os
 
-path_input = 'D:/developer/bitbucket/sulamerica/sas-governanca-analysis-datastream/cloud-function/test_datastream_to_bq/data/json'
-path_output = 'D:/developer/bitbucket/sulamerica/sas-governanca-analysis-datastream/cloud-function/test_datastream_to_bq/data/gzip'
+path_input = 'D:/developer/bitbucket/cloud-function/test_datastream_to_bq/data/json'
+path_output = 'D:/developer/bitbucket/cloud-function/test_datastream_to_bq/data/gzip'
 files = os.listdir(path_input)
 for file in files:
     print(file)
