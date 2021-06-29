@@ -4,7 +4,7 @@ y = 0.2*1000
 z = 24.0*1000
 
 while (x <= z):
-    print('branch_2')
+    print('branch_1')
     print(np.around(x % 1000, 2) == 0)
     print(np.around(x % 1, 2)-0.99 == 0)
     x += y
