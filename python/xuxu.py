@@ -5,5 +5,5 @@ z = 24.0*1000
 
 while (x <= z):
     print(np.around(x % 1000, 2) == 0)
-    # print(np.around(x % 1, 2)-0.99 == 0)
+    print(np.around(x % 1, 2)-0.99 == 0)
     x += y
