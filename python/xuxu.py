@@ -7,3 +7,4 @@ while (x <= z):
     print(np.around(x % 1000, 2) == 0)
     # print(np.around(x % 1, 2)-0.99 == 0)
     x += y
+print(z)
